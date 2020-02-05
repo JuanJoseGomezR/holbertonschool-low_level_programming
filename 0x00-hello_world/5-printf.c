@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  *main - uses printf
  *Description: same exercise doing printf
