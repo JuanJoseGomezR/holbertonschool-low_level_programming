@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
-*main - input
-*Description: finding random number
-*Return: void
+ *main - input
+ *Description: finding random number
+ *Return: void
 */
 int main(void)
 {
