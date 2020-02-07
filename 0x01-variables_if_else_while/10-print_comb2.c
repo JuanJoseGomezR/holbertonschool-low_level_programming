@@ -1,23 +1,30 @@
 #include <stdio.h>
 /**
-* main - Outputs numbers from 00 to 99
-* Return: 0
+* main - prints 00-99 in ascending order, seperated by a space
+*
+* Description: Uses two loop to print all numbers. Followed by a comma
+* deliminator and a space if not 99
+*
+* Return: returns 0
 */
 int main(void)
 {
-int i;
-int j;
+int i, j;
 
-for (i = 48; i < 58; i++)
+for (i = j = 48; i < 58; i++)
 {
-for (j = 48; j < 58; j++)
+while (j < 58)
 {
 putchar(i);
 putchar(j);
-if (i < 57 || j < 57)
+if ((i + j) != 114)
+{
 putchar(',');
 putchar(' ');
 }
+j++;
+}
+j = 48;
 }
 putchar('\n');
 return (0);
