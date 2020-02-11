@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
-* print-last-digit - Description
-* @ld: input
-* Return: Always 0.
+* print_last_digit - prints last digit of number
+* @ld: number to print last digit of
+*
+* Return: the value of last digit
 */
 
 int print_last_digit(int ld)
