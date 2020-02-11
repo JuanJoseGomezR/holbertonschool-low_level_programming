@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
-* _abs - 
-* @n: input 
+* _abs - absolute
+* @ab: input
 * Return: Always 0.
 */
 
