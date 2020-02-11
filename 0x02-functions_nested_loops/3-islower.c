@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
-* _islowe - .
-*
+* _islower - islower
+* @c: variable
 * Return: Always 0.
 */
 
