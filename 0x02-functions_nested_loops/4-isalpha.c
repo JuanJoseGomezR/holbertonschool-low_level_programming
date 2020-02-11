@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
-* _islower - check the code for Holberton School students.
-*@c: description
-* Return: Always 0.
+* _isalpha - check the code for Holberton School students.
+* @c: description
+* Return: Always 0.2
 */
 
-int _islower(int c)
+int _isalpha(int c)
 {
 if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 return (1);
