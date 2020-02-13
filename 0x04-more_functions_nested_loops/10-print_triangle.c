@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* print_square - prints "#"
+* print_triangle - prints "#"
 * @size: size of the #
 * Return: nothing
 */
@@ -10,7 +10,7 @@ void print_triangle(int size)
 {
 int row, column;
 
-if (size < 0)
+if (size <= 0)
 {
 _putchar('\n');
 }
