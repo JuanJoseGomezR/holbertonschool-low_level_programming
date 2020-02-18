@@ -10,12 +10,10 @@ void swap_int(int *a, int *b)
 {
 	if (a)
 	{
-		*a = 98;
 		*a = 42;
 	}
 	if (b)
 	{
-		*b = 42;
 		*b = 98;
 	}
 }
