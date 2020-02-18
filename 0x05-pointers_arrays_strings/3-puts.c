@@ -1,12 +1,17 @@
 #include "holberton.h"
-#include <stdio.h>
+
 /**
   * _puts - e
   * @str: var
-  * return: nothing
+  * Return: nothing
   */
 
 void _puts(char *str)
 {
-puts(str);
+	while (*str != 0)
+	{
+		_putchar(*str);
+		str++;
+	}
+	_putchar('\n');
 }
