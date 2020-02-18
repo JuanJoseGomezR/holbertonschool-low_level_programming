@@ -14,13 +14,13 @@ char *t = s;
 		while (*t)
 		{
 			t++;
-		while (s < t--)
-		{
-			*s ^= *t;
-			*t ^= *s;
-			*s ^= *t;
 		}
-		}
+			while (s < --t)
+			{
+				*s ^= *t;
+				*t ^= *s;
+				*s ^= *t;
+				s++;
+			}
 	}
-	_putchar('\n');
 }
