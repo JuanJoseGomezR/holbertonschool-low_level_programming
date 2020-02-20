@@ -11,7 +11,7 @@ int i, j;
 char array[] = "aAeEoOtTl";
 char sec[] = "4433007711";
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] != 0; i++)
 	{
 		for (j = 0; j <= 10; j++)
 		{
