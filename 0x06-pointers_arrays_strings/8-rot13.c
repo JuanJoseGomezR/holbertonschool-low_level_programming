@@ -13,7 +13,7 @@ char arr[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; s[i] != 0; i++)
 	{
-		for (j = 0; j < 52; j++)
+		for (j = 0; j <= 51; j++)
 		{
 			if (array[j] == s[i])
 			{
