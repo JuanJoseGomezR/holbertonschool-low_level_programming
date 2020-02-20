@@ -14,11 +14,9 @@ j = 0;
 	for (i = 0; *(dest + i) != '\0'; i++)
 	{
 	}
-	while (j < n && *(src + j) != '\0')
+	for (;j < n && *(src + j) != '\0'; i++, j++)
 	{
 		*(dest + i) = *(src + j);
-		i++;
-		j++;
 	}
 	*(dest + i) = '\0';
 	return (dest);
