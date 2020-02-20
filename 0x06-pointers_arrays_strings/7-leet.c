@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
-  *
-  *
-  *
+  * leet - change
+  * @s: pointer
+  * Return: return s
   */
 
 char *leet(char *s)
