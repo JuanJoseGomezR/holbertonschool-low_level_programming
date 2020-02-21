@@ -10,14 +10,17 @@ char *rot13(char *s)
 int i, j;
 char array[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char arr[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+char test;
 
 	for (i = 0; s[i] != 0; i++)
 	{
-		for (j = 0; j <= 51; j++)
+		test = 0;
+		for (j = 0; j <= 51 && test == 0; j++)
 		{
 			if (array[j] == s[i])
 			{
 				s[i] = arr[j];
+				test = 1;
 			}
 		}
 	}
