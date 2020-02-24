@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-  * _chessboard - print chessboard
+  * print_chessboard - print chessboard
   * @a: pointer
   * Return: nothing
   */
