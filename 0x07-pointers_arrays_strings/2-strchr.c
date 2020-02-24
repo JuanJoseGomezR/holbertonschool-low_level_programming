@@ -16,5 +16,5 @@ int i = 0;
 			return (s);
 		}
 	}
-	return ('\0');
+	return (0);
 }
