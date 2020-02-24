@@ -9,11 +9,11 @@ char *_strchr(char *s, char c)
 {
 int i = 0;
 
-	for (; s[i] != '\0'; i++, s++)
+	for (; s[i] != '\0'; s++)
 	{
 		if (s[i] == c)
 		{
-			return (s + 1);
+			return (s);
 		}
 	}
 	return ('\0');
