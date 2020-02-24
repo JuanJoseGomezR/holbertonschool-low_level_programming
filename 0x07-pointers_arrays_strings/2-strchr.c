@@ -16,5 +16,13 @@ int i = 0;
 			return (s);
 		}
 	}
+	if (s[i] == c)
+	{
+	return (s);
+	}
+
+	else
+	{
 	return (0);
+	}
 }
