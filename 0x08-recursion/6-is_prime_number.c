@@ -7,7 +7,7 @@
   */
 int primes(int i, int j)
 {
-	if ((i == 1) || (i < 0) ) 
+	if ((i == 1) || (i < 0))
 	{
 		return (0);
 	}
@@ -19,10 +19,10 @@ int primes(int i, int j)
 	{
 		return (0);
 	}
-	return primes(i, j + 1);
+	return (primes(i, j + 1));
 }
 /**
-* is_prime_numbers - square
+* is_prime_number - square
 * @n: var1
 * Return: if primes
 */
