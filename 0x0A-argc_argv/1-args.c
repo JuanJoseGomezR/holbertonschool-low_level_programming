@@ -2,7 +2,7 @@
 /**
   * main - number of arg
   * @argc: # of arguments
-  * @argv contains arguments
+  * @argv: contains arguments
   * Return: 0
   */
 int main(int argc, char __attribute__((unused)) *argv[])
