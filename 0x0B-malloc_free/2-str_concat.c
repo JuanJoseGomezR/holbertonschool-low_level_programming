@@ -33,6 +33,6 @@ char *conc;
 	{
 		conc[h] = s2[k];
 	}
-	conc[h] = '\0';
+	conc[j] = '\0';
 	return (conc);
 }
