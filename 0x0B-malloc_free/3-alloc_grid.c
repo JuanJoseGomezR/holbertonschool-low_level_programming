@@ -4,11 +4,11 @@
   * alloc_grid - 2 dimens array of integer
   * @width: var1
   * @height: var2
-  * Return: int type 
+  * Return: int type
   */
 int **alloc_grid(int width, int height)
 {
-int** point;
+int **point;
 int i, j;
 
 	if ((width <= 0) || (height <= 0))
