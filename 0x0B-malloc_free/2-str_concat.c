@@ -33,6 +33,5 @@ char *conc;
 	{
 		conc[h] = s2[k];
 	}
-	conc[j] = '\0';
 	return (conc);
 }
