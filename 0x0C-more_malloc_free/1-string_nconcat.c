@@ -5,7 +5,7 @@
   * @s1: point1
   * @s2: point2
   * @n: var
-  * Return: pointer	
+  * Return: pointer
   */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -23,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		;
 	j++;
 
-	if (n > j)
+	if (n >= j)
 		conc = malloc(sizeof(*conc) * (i + j));
 	else
 		conc = malloc(sizeof(*conc) * (i + n + 1));
