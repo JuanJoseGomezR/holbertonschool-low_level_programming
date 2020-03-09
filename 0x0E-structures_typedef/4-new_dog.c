@@ -42,7 +42,8 @@ char *_strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
-	char *name2, *owner2;
+	char *name2;
+	char *owner2;
 
 	dog = malloc(sizeof(dog_t));
 	if (dog == NULL)
