@@ -2,43 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* _strlen - function that returns the length of a string.
-* @s : s is a character
-* Return: value is i
-*/
-int _strlen(char *s)
-{
-	int i;
-
-	while (*(s + i))
-	{
-		i++;
-	}
-	return (i);
-}
-/**
-* _strcpy - string copy
-* @dest: var
-* @src: var
-* Return: dest
-*/
-char *_strcpy(char *dest, char *src)
-{
-	int i;
-
-	for (i = 0; i <= _strlen(src); i++)
-	{
-		*(dest + i) = *(src + i);
-	}
-	*(dest + i) = *(src + i);
-	return (dest);
-}
-/**
-  * new_dog - creates a new dog
-  * @name: cpy name
+  * new_dog - create new struct
+  * @name: name of the dog
   * @age: age of the dog
-  * @owner: cpy owner
-  * Return: nothing
+  * @owner: owner of the dog
+  * Return: dog
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -47,21 +15,43 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog = malloc(sizeof(dog_t));
 	if (dog == NULL)
 		return (NULL);
-	dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	dog->name = _strdup(name);
 	if (dog->name == NULL)
 	{
 		free(dog);
 		return (NULL);
 	}
-	dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	dog->owner = _strdup(owner);
 	if (dog->owner == NULL)
 	{
-		free(dog);
 		free(dog->name);
+		free(dog);
 		return (NULL);
 	}
-	_strcpy(dog->name, name);
 	dog->age = age;
-	_strcpy(dog->owner, owner);
+
 	return (dog);
+}
+/**
+ * _strdup - create a new same string from other
+ * @str: the original string
+ * Return: The new space of memory to the new string.
+ */
+char *_strdup(char *str)
+{
+	unsigned int j = 0, size;
+	char *s;
+
+	if (str == NULL)
+		return (NULL);
+
+	while (str[j] != '\0')
+		j++;
+	size = j + 1;
+	s = (char *) malloc(size * sizeof(char));
+	if (s == NULL)
+		return (NULL);
+	for (j = 0; j < size; j++)
+		s[j] = str[j];
+	return (s);
 }
