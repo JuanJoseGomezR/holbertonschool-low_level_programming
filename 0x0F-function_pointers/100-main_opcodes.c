@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int h;
 	char *plato = (char *)main;
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
