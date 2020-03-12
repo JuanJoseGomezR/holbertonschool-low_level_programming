@@ -17,7 +17,7 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 	int i = 0;
-	
+
 	while (s && ops[i].op != NULL)
 	{
 		if (!strcmp(s, ops[i].op))
