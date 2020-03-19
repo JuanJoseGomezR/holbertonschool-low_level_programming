@@ -11,6 +11,7 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *nw_node;
+
 	nw_node = malloc(sizeof(list_t)); /* Reserve memory*/
 
 	if (nw_node == NULL) /* In case of error = NULL*/
