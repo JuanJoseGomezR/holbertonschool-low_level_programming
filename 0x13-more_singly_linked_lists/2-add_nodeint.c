@@ -3,6 +3,7 @@
   * add_nodeint - add node at the beginning
   * @head: node
   * @n: const var
+  * Return: new_node
   */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
