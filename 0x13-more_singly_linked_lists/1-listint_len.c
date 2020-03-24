@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-  * listin_len - length of list
+  * listint_len - length of list
   * @h: cons var
   * Return: # elements | 0
   */
