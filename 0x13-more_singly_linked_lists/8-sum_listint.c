@@ -6,7 +6,7 @@
   */
 int sum_listint(listint_t *head)
 {
-	unsigned int count;
+	unsigned int count = 0;
 	listint_t *nd_index = head;
 
 	if (head == NULL)
