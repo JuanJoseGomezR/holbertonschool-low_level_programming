@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
-  *
-  *
-  *
+  * print_binary - show binary format
+  * @n: number
+  * Return: nothing
   */
 void print_binary(unsigned long int n)
 {
