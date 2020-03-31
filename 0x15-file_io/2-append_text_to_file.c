@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * append_text_to - appends text to the file
+ * append_text_to_file - appends text to the file
  * @filename: file
  * @text_content: content
  * Return: integer
