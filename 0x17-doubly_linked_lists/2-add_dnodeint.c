@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-  * add_nodeint - add a new node at the beginn
+  * add_dnodeint - add a new node at the beginn
   * @head: head node (first)
   * @n: const int
   * Return: ...
