@@ -4,12 +4,8 @@
  * hash_table_set - function that adds an element to the hash table
  * @ht: the hash table you want to add or update the key/value to
  * @key: the key
- * @value: the value associated with the key.
- *
- * Description:  key can not be an empty string, value can be an empty string
- *	In case of collision, add the new node at the beginning of the list
- *	hash table already created using function from 0-hash_table_create
- * Return: 1 if it succeeded, 0 otherwise
+ * @value: the value
+ * Return: 1 if it succeeded || 0 if failed
  */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
