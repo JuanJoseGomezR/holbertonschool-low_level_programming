@@ -16,7 +16,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (ht == NULL || key == NULL)
 		return (NULL);
 
-	/* find the index of the value */
 	index = key_index((const unsigned char *)key, ht->size);
 
 	aux = ht->array[index];
@@ -24,7 +23,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (aux == NULL)
 		return (NULL);
 
-	/* collisions*/
 	for (i = strcmp(key, aux->key); aux != NULL; )
 	{
 		if (i == 0)
