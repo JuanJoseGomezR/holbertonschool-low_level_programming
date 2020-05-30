@@ -1,26 +1,38 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - function that retrieves a value associated with a key
- * @ht: pointer to hash table
- * @key: key of hash table element
- *
- * Return: the value associated with the
- * element, or NULL if key couldnt be found
+ * *hash_table_get - that retrieves a value associated with a key
+ * @ht: the hash table you want to look into
+ * @key: the key you are looking for
+ * Description: return NULL if key couldn't be found
+ * Return: the value associated with the element
  */
+
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	hash_node_t *tmp;
-	unsigned long int index;
+	unsigned long index;
+	hash_node_t *traverse;
+	int i;
 
-	if (ht == NULL || key == NULL || *key == '\0' || ht->array == NULL
-			|| ht->size == 0)
-		return (NULL);
+	/* return 0 if table, key or value is NULL */
+	if (ht  == NULL || key == NULL)
+		return (NULL); /* return NULL if key can't be found */
+
+	/* use key_index to determine index of the value */
 	index = key_index((const unsigned char *)key, ht->size);
-	for (tmp = ht->array[index]; tmp; tmp = tmp->next)
+
+	traverse = ht->array[index];
+
+	if (traverse == NULL)
+		return (NULL);
+
+	/* handle collision instances */
+	for (i = strcmp(key, traverse->key); traverse != NULL; )
 	{
-		if (strcmp(tmp->key, key) == 0)
-			return (tmp->value);
+		if (i == 0)
+			return (traverse->value);
+		traverse = traverse->next;
 	}
+
 	return (NULL);
 }
